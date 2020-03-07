@@ -5,6 +5,8 @@ if (hasInterface) then
 	player removeweaponGlobal "itemmap";
 	player removeweaponGlobal "itemgps";
 	};
+player setUnitTrait ["medic",true];
+player setUnitTrait ["engineer",true];
 if (isMultiplayer) then
 	{
 	if (!isServer) then

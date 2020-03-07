@@ -61,17 +61,17 @@ if (not("FirstAidKit" in (items _curandero))) then
 	};
 _timer = if ([_curado] call A3A_fnc_fatalWound) then
 			{
-			time + 35 + (random 20)
+			time + 10
 			}
 		else
 			{
 			if ((!isMultiplayer and (isPlayer _curado)) or ([_curandero] call A3A_fnc_isMedic)) then
 				{
-				time + 10 + (random 5)
+				time + 5
 				}
 			else
 				{
-				time + 15 + (random 10)
+				time + 5
 				};
 			};
 
